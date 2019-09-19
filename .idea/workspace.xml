@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5925a68-f1fb-40db-9442-f808ce2a1521" name="Default Changelist" comment="" />
+    <list default="true" id="d5925a68-f1fb-40db-9442-f808ce2a1521" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_Devops/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_Devops/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_Devops/hotel_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_Devops/hotel_func.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_Devops/hotel_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_Devops/hotel_main.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +179,19 @@
       <updated>1568646914343</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
