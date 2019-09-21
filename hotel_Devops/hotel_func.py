@@ -1,13 +1,12 @@
 import datetime
-
 from hotel_Devops import functions
 import hotel_Devops
 
 # this will change for different machines
-
-
 file_path = "D:/Programing/HotelProject-master/Files/room"
 num_of_rooms = 4
+invitation_dic = {}
+inv_id = 0
 
 
 class hotels:
@@ -38,7 +37,7 @@ class hotels:
             room_occupied_text = " is occupied in these dates.*"
 
             if adults == 2:
-                for i in range(int(num_of_rooms/2)):
+                for i in range(int(num_of_rooms / 2)):
                     with open(file_path + str((i + 1)) + ".txt", "r") as f:
                         room1_list = list(f.read().splitlines())
                         if date in room1_list:
@@ -67,37 +66,42 @@ class hotels:
         room3_price = 800
         room4_price = 1500
 
+        name = input("Enter your name")
         answer = input("Witch room would you like to get?")
         if answer == "1":
             order = int(input("Are you sure you to order room" + answer + " for " + str(room1_price) +
                               "$ per day?\n1 = Yes\n2 = No"))
-            order_logic(answer, order)
+            order_logic(answer, order, name)
         elif answer == "2":
             order = int(input("Are you sure you to order room" + answer + " for " + str(room2_price) +
                               "$ per day?\n1 = Yes\n2 = No"))
-            order_logic(answer, order)
+            order_logic(answer, order, name)
         elif answer == "3":
             order = int(input("Are you sure you to order room" + answer + " for " + str(room3_price) +
                               "$ per day?\n1 = Yes\n2 = No"))
-            order_logic(answer, order)
+            order_logic(answer, order, name)
         elif answer == "4":
             order = int(input("Are you sure you to order room" + answer + " for " + str(room4_price) +
                               "$ per day?\n1 = Yes\n2 = No"))
-            order_logic(answer, order)
+            order_logic(answer, order, name)
         else:
             print("No such room, room" + answer)
             functions.main_menu()
 
 
-def order_logic(answer, order):
+def order_logic(answer, order, name):
     if order == 1:
+        inv_id + 1
+        invitation_dic.update({inv_id: name})
         print("\nCongrats you successfully ordered room" + answer + "\n")
+        print(invitation_dic)
     elif order == 2:
         print("\nToo bad.\n")
         functions.main_menu()
     else:
         print("\nInvalid input.\n")
         functions.main_menu()
+
 
 # print('''
 #  welcome to Net4U Hotel!
